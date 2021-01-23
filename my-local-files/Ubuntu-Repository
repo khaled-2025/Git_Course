@@ -1,0 +1,6 @@
+
+- ubuntu repository 
+
+sudo sh -c 'echo "deb http://archive.ubuntu.com/ubuntu bionic main restricted universe multiverse" > /etc/apt/sources.list'
+sudo sh -c 'echo "deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse" >> /etc/apt/sources.list'
+sudo sh -c 'echo "deb http://security.ubuntu.com/ubuntu bionic-security main restricted universe multiverse" >> /etc/apt/sources.list' 

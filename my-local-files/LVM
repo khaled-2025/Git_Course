@@ -1,0 +1,44 @@
+LVM : stands for Logical Volume Management/Manager.
+------------------------------
+Definition:
+
+It is a system of managing logical volumes, or filesystems, that is much more advanced and flexible than the traditional method of partitioning a disk into one or more segments and formatting that partition with a filesystem.
+------------------------------
+                               "How to Create Logical Volume"
+ 
+$ pvcreate /dev/sdb2 dev/sdc : to change those partitions from pysical paritions to physical volumes.
+$ pvs : displays phyical partitions and which partition is a physical volume.
+$ lvs : lists logical volumes.
+$ pvdisplay : it seems the same pervious command but with more detials.
+$ vgcreate data /dev/sdb2 dev/sdc : here we created volume group named " data " and it contains 2 phyical extened 1-dev/sb2 2-/dev/sdc.
+$ lvcreate --size 20G --name Orcal data : here we created logical volume with size 20G and named Orcal and it created from data volume group.
+
+--------------------------------
+                                 "how to create file system:"
+
+$ mkfs.ext4 /dev/data/Orcal : to create file system from data from Orcal
+$ mkdir Orcal : cteare a proper directory name to mount the file system under this created directory.
+$ mount /dev/data/Orcal /Orcal : mount the file system to /Orcal.
+-------------------------------
+$ lvremove /dev/data/Orcal : to remove the volume.
+$ vgremove data : to remove golume group (data).
+$ pvremove /dev/sdb2 /dev/sdc : to reomove the physical volume & and it will return physical partition.
+-------------------------------
+
+                                "how to extend LVM Voulme Parition" 
+$ lvextend --size +10G /dev/data/Orcal : here we extened /data/orcal more 10GB.
+$ resize2fs /dev/data/Orcal : to let the disk read the additional size/space.
+
+-----------------------------------
+                                   
+                                 "how to shrink/Reduce LVM Volume Partition"
+frist setp you have to umount the file system 
+
+$ umount /dev/data : umount the file system
+$ e2fsck -f /dev/data/Orcal : check on the file system.
+$ resize2fs /dev/data/Orcal 30G 
+$ lvreduce -l -5G /dev/data/Orcal
+$ mount /dev/data/Orcal /data
+$ df -h 
+------------------------------
+

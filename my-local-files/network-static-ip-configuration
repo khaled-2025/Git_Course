@@ -1,0 +1,26 @@
+                                  " how to set ubuntu18.4 server static ip"
+
+$ cd /etc/netplan
+$ ls 
+$ sudo mv 50-cloud-init.yaml 50-cloud-init.yaml.backup : here we just created new file .backup 
+$ sudo touch 01-netcfg.yaml : cteared new file .yaml
+$ sudo nano 01-netcfg.yaml : to edit the file with the below configuration:
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens3:
+      dhcp4: no
+      addresses:
+        - 192.168.121.199/24
+      gateway4: 192.168.121.1
+      nameservers:
+          addresses: [8.8.8.8, 1.1.1.1]
+save the changes,then 
+
+$ sudo netplan apply
+
+
+
+

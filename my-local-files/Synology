@@ -1,0 +1,23 @@
+
+ to get Synology MAC Address: 
+
+Control Panel < Info Center < Network 
+------------------------
+ 
+to delete a task in synology follow the below steps:
+
+Active Business for Backup < Virtual Machine < Task List < Delete the Task.
+
+----------------------------
+
+how to resolve Synology Vmware vSphere Ctreate Backup Task Issue:  
+# it consider also as SSH authorization failures even when the SSH service is disabled issue?
+
+You are still receiving SSH authorization failure warnings in Log Center > Connection even when the SSH service is disabled. An example of such warnings is: "User […] from […] failed to log in via [SSH] due to authorization failure".
+
+the Solutions are as below: 
+
+- For SFTP:  Go to Control Panel > File Services > FTP, and untick Enable SFTP service
+
+- For rsync: Go to Control Panel > File Services > rsync, and untick Enable rsync service.1
+

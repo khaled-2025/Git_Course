@@ -1,0 +1,41 @@
+
+i received my Objectives on 10/1/2020
+-------------------------
+Screens Deleivered ( Types ):
+1- (3) samsung 
+2- (1)LG
+3- (1) Dell.
+--------------------------
+windows=space : to change language in linux
+----------------
+bios :
+configuration raid <(controllaer , hdd),(Auto Import)
+UFI:
+boat order.
+----------------
+what's done today: 
+
+- configured Userdir on Apache2 and apache2.conf file 
+- free up space on ESXi 1&2.
+- tested & backup and Restore for Vcenter Server Appliance.
+- Configured and tested vMotion for some VMs.
+- Migrate a live VM from ESXi to Another One (Tested Successfully)
+- configured Sophos XG Home Firewall (DNS Records, Deleted Old/unnecessary ones and created new Records to use zbx1 via domain not IP), Restarted DHCP,DNS Servers, Added New Mac Addresses to Mac list 
+- Create Service catalog closed ticket.
+- received workstation from mai.
+
+
+
+----------------------------------
+VMWARE:
+
+- thick Provisioning:
+
+if you created a new Virtual Hard Disk 50GB it will Appear 50GB on ESXi Datastore even if the hard disk Empty.
+
+- thin Provisioning:
+
+if you created a new virtual hard disk 50GB it appear as 0GB on Datastore and the space will increase as per your usage.
+-----------------------------------
+
+

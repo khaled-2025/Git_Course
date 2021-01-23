@@ -1,0 +1,93 @@
+What is Python?
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+-------------------
+It is used for:
+
+web development (server-side),
+software development,
+mathematics,
+system scripting.
+------------------------
+What can Python do?
+
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+--------------------------
+Why Python?
+
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar to the English language.
+Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a procedural way, an object-oriented way or a functional way.
+-----------------------------
+Python Veriable: 
+
+let's consider the veriable is something like a box, you can store anything in it, ( store something like info, value, data, whatever ) it eases the management of big data and values in python language.
+------------------------------
+A variable is a container for a value. It can be assigned a name, you can use it to refer to it later in the program.
+Based on the value assigned, the interpreter decides its data type. You can always store a different type in a variable.
+For example, if you store 7 in a variable, later, you can store ‘Dinosaur’.
+-------------------------------
+Python Data Types
+
+1. Python Numbers:
+
+There are four numeric Python data types.
+a. int
+int stands for integer. This Python Data Type holds signed integers. We can use the type() function to find which class it belongs to.
+
+b. float
+This Python Data Type holds floating-point real values. An int can only store the number 3, but float can store 3.25 if you want.
+
+c. long
+This Python Data type holds a long integer of unlimited length. But this construct does not exist in Python 3.x.
+
+d. complex
+This Python Data type holds a complex number. A complex number looks like this: a+bj Here, a and b are the real parts of the number, and j is imaginary.
+---------------------------------
+2. Strings:
+
+A string is a sequence of characters. Python does not have a char data type, unlike C++ or Java. You can delimit a string using single quotes or double-quotes.
+---------------------------------
+3. Python Lists:
+
+A list is a collection of values. Remember, it may contain different types of values.
+To define a list, you must put values separated with commas in square brackets. You don’t need to declare a type for a list either.
+---------------------------------
+4. Python Tuples:
+
+A tuple is like a list. You declare it using parentheses instead
+
+A string is a sequence of characters. Python does not have a char data type, unlike C++ or Java. You can delimit a string using single quotes or double-quotes.
+-------------------------------
+5. Dictionaries:
+
+A dictionary holds key-value pairs. Declare it in curly braces, with pairs separated by commas. Separate keys and values by a colon(:).
+------------------------------
+-Constants: it's a type of veriable can't be changed in General.
+-it's like a contianer that hold info or data which can't be changed letter
+- declired and assigned in a sperate file to be readable
+-------------------------------
+- Numeric Literals:
+ integer literals: Binary, Decimal, Octal, Hexadecimal
+Numeric literals are unchangeable
+int, float and complex
+int, float and
+-------------------------------
+String Literals
+-----------------------------
+Boolean Literals:
+--------------------------
+Special Literals: none
+Define a null value
+-------------------
+Lists: 
+ordered sequence
+most popular and used data type
+flexible
+store many types of data
+

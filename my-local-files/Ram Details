@@ -1,0 +1,23 @@
+Ram Details Command : 
+sudo dmidecode -t 17 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+To display RAM type and speed, use the command: 
+sudo lshw -c memory
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ahmed 145
+ibrahim 258
+---------------
+
+honor c9 specs:
+ram : 4 
+spcae : 64 
+CPU: Hisilicon Kirin 710A
+
+----------------------
+
+sudo dmidecode -t system | grep Serial
+

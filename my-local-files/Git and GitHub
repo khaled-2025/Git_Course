@@ -1,0 +1,122 @@
+
+Git and GitHub:
+
+Git Configuration:
+
+$ git config -l : display Git Configuration list.
+$ git help config : display Git help 
+$ git config --global user.email : dispaly user.email value. 
+$ git config --global user.email "khaled.aly@3ddx.com" : here u can enter your value between the double quotation to modify user Email, u can do the same with any other value.
+$ git config -l --show-origin : dispaly the Source of Git configuration 
+$ git config --global --unset user.name : to remove user.name value from Git Configuration.
+$ git config --gloabl user.name "khaled.aly" : to Set username khaled.aly in GIt configuration again.
+$ git config --global  --edit : to Edit in Git Configration via Editing the file.
+
+------------------------------------------------
+
+GitHub Repository and Clone it:
+
+on Github server/webpage press on code/clone and copy the link,
+then create a dirctory on your local repo for your project and open terminal on the dirctory path and write this command to clone the project from GitHub:
+$ git clone (and paste the copied link here without quotation) and it will be downloaded.
+------------------------------------------------
+
+Add and Reset and Commit & Explain Progress:
+
+$ git status: displays the state of the working directory and the staging area, It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git. Status output does not show you any information regarding the committed project history.
+
+$ git add css\main.css index.html : to add the file css\main.css and index files to the staging area
+$ git status : to show the changes.
+$ git commit -m "created the main project structure" : tis command to commit what you did and write notes on the modified files to facilities the work to your teammates.
+$ git reset HEAD khaled.pdf: to remove khaled.pdf from staging area (this command to unstaging the file or reset the file to not track the file)
+----------------------------------------------------
+
+Push Local Changes to Remote Repository:
+
+$ git branch : displays your Local branchs 
+$ git remote -v : displays your remote names 
+$ git push RemoteName BranchName : to push your local repo to the remote repo on GitHub and then assign your credentials to GitHub
+$ git push origin main : here i pushed my local repo to the remote repo
+
+----------------------------------------------------
+
+Pull changes from Remote Repo:
+
+$ git pull origin
+
+---------------------------------------------------
+How to Delete a Remote Repo?
+
+from Github webpage < Repo Setting < Danger Zone < Delete this Repo.
+--------------------------------------------------
+assign ssh public key to github: 
+
+$ ssh-keygen -t rsa -b 4096 : to generate ssh private and public keys
+
+# from github webpage < setting < SSH and GPG Keys < put your public key
+
+$ ssh -T git@github.com : to access your public key on github
+--------------------------------------------------
+Create Repo from Existing Project:
+
+$ mkdir Repos
+$ cd /repos 
+$ git init : to Initialized empty Git repository in the current working directory
+$ touch index.html
+$ git status
+$ git add index.html : to add it to staging area
+$ git commit -m "created the main file" : to commit the changes
+$ git remote add origin git@github.com:khaled-2025/course.git : to add ur repo to remote repo
+-----------------------------------------------
+Pull Request:
+
+Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+----------------------------------------------
+Aliases:
+it's a feature that can make your Git experience simpler, easier, and more familiar.
+( Aliases are like custom shortcuts used to represent a command )
+
+$ git config --global alias.st status : This means that, instead of typing git status, you just need to type git st.
+and This makes the following two commands equivalent:
+$ git status 
+=
+$ git st
+------------------------------------------------
+Another Alias Example:
+
+$ git config --global alias.unstage 'reset HEAD --'
+This makes the following two commands equivalent:
+
+$ git unstage fileA
+$ git reset HEAD -- fileA
+-----------------------------------------------
+Learn about Branching and Merging: 
+
+$ git branch : to check your branches
+$ git branch khaled : to create a new branch named khaled
+$ git checkout main : to switch between branches here we return/switched to$  branch main
+$ git checkout -b Devlopment : to create new brach named dev and redirct me to the new branch
+$ git branch -m Dev : to rename the brach to Dev instead of Devlopment 
+$ git bracnch -d khaled : to delete branch khaled ( -d it's a save delete cause Git will check if you have an Edit without merge it will not accept to remove the branch, while -D it's a force Delete it will Delete your brach anyway.
+-------------------------------------------------
+Mastering Stash:
+
+git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
+
+$ git stash : this command takes your uncommitted changes (both staged and unstaged) and saves them away for later use.
+$ git stash list : to view your stash files
+$ git stash pop : to re-apply the command and after this command you can commit your code and push them to your master bransh.
+$ git commit -m "put your comment"
+$ git push origin main : to push your files to your origin (master) and main.
+------------------------------------------------
+$ git stash save "added new file test" : To provide a bit more context, it's good practice to annotate your stashes with a description.
+------------------------------------------------
+difference between stash pop vs stash apply?
+
+git stash pop throws away the (topmost, by default) stash after applying it, whereas git stash apply leaves it in the stash list for possible later reuse (or you can then git stash drop it).
+------------------------------------------------
+
+ 
+
+
+  

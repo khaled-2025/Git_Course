@@ -1,0 +1,6 @@
+how to resolve backuppc apache issue / couldn't open url page ?
+==============================================================
+
+$ rm /etc/apache2/conf-enabled/backuppc.conf
+$ sudo ln /etc/backuppc/apache.conf /etc/apache2/conf-enabled/backuppc.conf
+$ service apache2 restart

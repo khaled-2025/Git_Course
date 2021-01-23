@@ -1,0 +1,11 @@
+
+
+* * * * *
+explanation : 
+*minute *hour *day of month *month *day of week < command> 
+-----------------
+minute value can be from 0 to 59 
+hour value can be from 0 to 23
+day of month value can be from 1 to 31  
+month value can be from 1 to 12
+day of week value can be from 0 to 6, with 0 denoting sunday    

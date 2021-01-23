@@ -1,0 +1,18 @@
+
+
+disable root login:
+
+first add a user has the same root privilidges
+
+$ adduser Linux_Admin
+$ Passwd Linux_Admin
+---------------------
+then add this user to sudoers file
+
+$ vim /etc/sudoers
+---------------------
+then permit root login in the ssh_config file
+
+$ vim /etc/ssh/ssh_config
+
+PermitRootLogin No

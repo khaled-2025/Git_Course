@@ -1,0 +1,11 @@
+
+custom banner in linux for ssh via 
+
+$ vim /etc/ssh/ssh_config 
+
+or 
+
+$ vim /etc/motd 
+and write inside it your banner msg 
+
+---------------------

@@ -1,0 +1,8 @@
+how to Recover ESX VM ?
+
+- go to Synology NAS < Virtual Servers < Press on the Server < OPen the VM Server Path < Copy it to the ESXI Location (ESXI VMware) < then open the terminal as the root < then 
+
+$ cd /vmsf/Voulume/NAS/ESXi
+$ vi KHA-Ubun18-Moodle-2001207.vmx 
+# remove 00000 from .vmdk file path 
+

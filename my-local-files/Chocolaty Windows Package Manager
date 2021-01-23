@@ -1,0 +1,38 @@
+	              << installing chocolatey Packages Script >>
+
+- install Osse view team Required Packages via Single choco command : 
+- OPen Powershell or CMD as Admin and write the below command : 
+
+$  choco install anydesk.install Firefox googlechrome office-tool avastfreeantivirus visualstudio2019enterprise vlc teamviewer9 atom dotnetfx eclipse filezilla jdk8 git mobaxterm mysql mysql.workbench netbeans nodejs sqlite npppluginmanager vscode.template advanced-installer 7zip Blender cmake glassFish dbeaver gimp lazarus postman unity
+
+
+                ------------------------------------------------
+
+
+- install Testing team Required Packages via Single choco command : 
+- OPen Powershell or CMD as Admin and write the below command :
+
+$ choco install anydesk.install Firefox googlechrome office-tool avastfreeantivirus vlc teamviewer9 vmwareworkstation eclipse filezilla git mobaxterm jdk8 mysql mysql.workbench postman soapui greenshot 7zip adobereader 
+
+
+            
+               ------------------------------------------------
+
+- install UIUX team Required Packages via Single choco command : 
+- OPen Powershell or CMD as Admin and write the below command :
+
+$ choco install anydesk.install Firefox googlechrome office-tool avastfreeantivirus vlc teamviewer9 7zip adobereader adobe-creative-cloud brave visioviewer 
+
+             --------------------------------------------------
+
+- install Regulatory team Required Packages via Single choco command : 
+- OPen Powershell or CMD as Admin and write the below command :
+
+$ choco install anydesk.install Firefox googlechrome office-tool avastfreeantivirus vlc teamviewer9 7zip zoom gotomeeting activepresenter adobereader microsoft-visual-cpp-build-tools 
+
+            -------------------------------------------------------
+
+- install SW Head Assistant Required Packages via Single choco command : 
+- OPen Powershell or CMD as Admin and write the below command :
+
+$ choco install anydesk.install Firefox googlechrome office-tool avastfreeantivirus vlc teamviewer9 atom git 7zip zoom nvidia-geforce-now visioviewer r.studio

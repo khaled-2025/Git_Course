@@ -1,0 +1,30 @@
+
+
+service: we secured this point (every databases has a user name and password for authentication)
+
+management: every url is https < every user has acomplicated password. 
+
+tunneling:
+
+ssh tunnling/port forwarding
+vpn connection
+
+vmware:
+
+--------------- 
+antiviros
+
+
+ --------------
+virous tye:
+- spyware types:
+
+1- adware : it's advertising pop up urls
+2- keylogger: captures keystrokes and mouse/pad movement
+3- monitors: used for tracking user activity
+4- tracking cookies: used to log web broswing activity.
+5- click fraud: automated script that limtates legitimate user by clicking ad for the purpose of generating pay per click revenue
+ 
+- roolkits
+- worm 
+- trojan 

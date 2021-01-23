@@ -1,0 +1,70 @@
+Setup SSH Passwordless Certificate for login to Linux servers
+- Generate SSH key using RSA Algorithm within 4096 bytes and compatible with PEM certificate 
+$ ssh-keygen -t rsa -b 4096 -m PEM
+Enter file in which to save the key (/home/user/.ssh/id_rsa): server-key
+
+- Then you can get pem from your rsa private key.
+$ openssl rsa -in server-key -outform pem > server-key.pem
+
+, change permissions to private key in local machine
+$ chmod 0400 server-key.pem
+
+- Copy SSH Public key to your server
+$ ssh-copy-id -i server-key.pub user@Sever-IP-OR-Domain
+
+- Login using SSH Key 
+$ ssh -i server-key.pem user@Sever-IP-OR-Domain
+
+- Create SSH config file
+$ nano ~/.ssh/config
+# Server @datacenter1
+ Host web1
+ Hostname mydomain.com
+ User username
+ Port 1234
+ IdentityFile /path-to-private-key/server-key.pem
+
+- Login using SSH config details 
+$ ssh web1 
+- Change SSH service settings to disable root login and prevent using passwords (remote server)
+
+$ sudo nano /etc/ssh/sshd_config
+# change default ssh port
+Port 1234
+
+# use two method authentication: publickey, password
+AuthenticationMethods publickey,password
+
+# disable root login
+PermitRootLogin no
+
+# disable login using password only
+#PasswordAuthentication yes
+
+# Allowed Users only to login
+AllowUsers user1@192.168.1.0/24 user2@10.10.10.0/16
+
+- Apply ssh new settings by restart service
+$ sudo systemctl restart ssh.service
+
+, change permissions to authorized_keys file
+$ chmod 0400 ~/.ssh/authorized_keys
+-------------------------------------------
+Copy your SSH Key to the Remote Server:
+
+$ssh-copy-id swd@1.0.8.9
+-------------------------------------------
+How to create ssh Alias to login with a name:
+on the client machine do the following:
+
+$ cd ~/.ssh
+$ nano config : to create a config file and configure it as below:
+
+Host vm1
+       Hostname 1.0.8.9
+       User swd
+       Port 22
+       IdentityFile ~/.ssh/id_rsa
+--------------------------------------------
+
+

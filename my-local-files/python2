@@ -1,0 +1,61 @@
+
+- print ('khaled's "laptop"')
+it will give you a invalid syntax and to avoid this single quote '
+put\ backslash will avoid the single qoute $ print('khaled\'s "laptop"') it will print khaled's "laptop"
+--------------------------------
+- Assign Vaules to Variables:
+
+username = "Ubuntu" 
+# this is the variables.
+print(username) 
+# will print Ubuntu 
+----------------------------------
+- Assign Multiple Values in the same line: 
+
+num1, num2, num3, "khaled"
+# those are the variables 
+
+print(num1)
+print(num2)
+print(num3)
+print(name)
+# will print the veriables
+------------------------------------
+x = 5 
+y = 10 
+print("x + y =", (x+y))
+------------------------------------
+Coparsion Operators: 
+x = 10 
+y = 15
+print(x<y)
+false
+-------------------------------------
+Coparsion Operators: 
+x = 10 
+y = 15
+print(x>y)
+true
+--------------------------------------
+Coparsion Operators: 
+x = 10 
+y = 15
+print(x==y)
+flase 
+# cause the 2 values are not equal
+----------------------------------------
+Coparsion Operators: 
+x = 10 
+y = 15
+print(x>=y)
+false
+#cause x is not greater than y 
+-------------------------------------
+# below is an example for list process 
+friends = ["khaled", "mohamed", "ahmed", "mahmoud"]
+print(friends[0])
+# print zero will print frist name khaled, print one will print the second value mohamed
+# to print them all 
+print(friends[0:]) wiil print all.
+----------------------------------------
+
