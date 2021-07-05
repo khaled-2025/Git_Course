@@ -41,6 +41,10 @@ at : to scadule script at specific time for only one time
 at 02:50 
 at> ls -lf / > ali.txt :: it means at clock 02:50 display or list all files for root / in file ali.txt 
 --------------------------------------
+timedatectl set-ntp no : to disable sync with ntp
+timedatectl set–time 21:45:53 : to change your workstation time.
+date -s "16 FEB 2021 8:15:00" : to change your time (the day is 15 and FEB is the month)
+--------------------------------------
 service --status-all : displays all the services & running or not .
 ---------------------------------
 service webmin stop : it means stop webmin service . 
@@ -106,7 +110,8 @@ lsblk : to display your hard disks
 ----------------------------
 fdisk -l : to display hard disks data
 --------------------------
-fdisk /dev/sdb : to creat new partion & remove partion , etc 
+$ fdisk /dev/sdb : to creat new partion & delete partion , etc 
+$ partprobe: to get partition recognized without needed to reboot the system cause Without reboot, u will NOT be able to create a filesystem on your newly created or modified partitions with the mke2fs command.
 --------------------------
 dd if=/dev/sda1 of=/sda1.backup : this command to take backup from partition sda1 and copy it in file sda1.backup 
 --------------------------
@@ -185,5 +190,22 @@ $ unalias -a [remove all alias]
 -------------------
 nproc : for checking your CPU core.
 ------------------
-
-
+lsb_release -a : get server release
+-----------------
+wc -l /etc/group : display the number of groups
+------------------
+more /etc/login.defs : get info about password policy/age , etc
+-------------------
+there are 3 main files to set password policy:
+1- /etc/login.defs
+2- /etc/pam.d/system-auth
+3- /etc/security/pwquality.conf
+note : before editing any file of them, best practice to take a backup of the file.
+-------------------
+to disable user account:
+change user shell from /bin/bash to /bin/nologin
+-------------------
+chage -l swd :To view a user swd account aging information like Last password change, Password expires, Account expires, etc
+-------------------
+$ nl : view text files with their lines numbers.
+-------------------
